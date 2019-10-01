@@ -1,13 +1,13 @@
 <?php
 
-namespace KenoKokoro\Tests\Response\Unit\Http\Json;
+namespace V9\Tests\Response\Unit\Http\Json;
 
-use V9\Response\Http\Json\JsonResponseInterface;
-use V9\Response\Http\Json\Factory as JsonFactory;
 use Illuminate\Http\JsonResponse;
-use V9\API\V1\Tests\Unit\UnitTestCase;
+use V9\Response\Http\Json\Factory as JsonFactory;
+use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Tests\Response\Unit\TestCase;
 
-class FactoryTest extends UnitTestCase
+class FactoryTest extends TestCase
 {
     /**
      * @var JsonFactory

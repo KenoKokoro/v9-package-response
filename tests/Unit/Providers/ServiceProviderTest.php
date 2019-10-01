@@ -1,18 +1,18 @@
 <?php
 
-namespace KenoKokoro\Tests\Response\Unit\Providers;
+namespace V9\Tests\Response\Unit\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
-use V9\Response\Http\HttpFactory;
-use V9\Response\Http\Json\Factory as JsonFactory;
-use V9\Response\Http\Json\JsonResponseInterface;
-use V9\Response\Http\HttpFactoryInterface;
-use V9\Response\Providers\ServiceProvider;
 use Mockery as m;
 use Mockery\MockInterface;
-use V9\API\V1\Tests\Unit\UnitTestCase;
+use V9\Response\Http\HttpFactory;
+use V9\Response\Http\HttpFactoryInterface;
+use V9\Response\Http\Json\Factory as JsonFactory;
+use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Providers\ServiceProvider;
+use V9\Tests\Response\Unit\TestCase;
 
-class ServiceProviderTest extends UnitTestCase
+class ServiceProviderTest extends TestCase
 {
     /**
      * @var MockInterface|Application
@@ -41,5 +41,6 @@ class ServiceProviderTest extends UnitTestCase
             ->with(JsonResponseInterface::class, JsonFactory::class);
 
         $this->fixture->register();
+        self::assertTrue(true);
     }
 }
