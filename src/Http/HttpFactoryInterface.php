@@ -1,9 +1,9 @@
 <?php
 
-namespace KenoKokoro\Response\Http;
+namespace V9\Response\Http;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
-use KenoKokoro\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\Json\JsonResponseInterface;
 
 interface HttpFactoryInterface
 {

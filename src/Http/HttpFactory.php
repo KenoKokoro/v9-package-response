@@ -1,10 +1,10 @@
 <?php
 
-namespace KenoKokoro\Response\Http;
+namespace V9\Response\Http;
 
 use Illuminate\Contracts\Container\Container;
-use KenoKokoro\Response\Http\Json\Factory;
-use KenoKokoro\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\Json\Factory;
+use V9\Response\Http\Json\JsonResponseInterface;
 
 class HttpFactory implements HttpFactoryInterface
 {

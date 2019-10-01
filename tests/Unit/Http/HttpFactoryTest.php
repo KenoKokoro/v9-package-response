@@ -2,14 +2,14 @@
 
 namespace KenoKokoro\Tests\Response\Unit\Http;
 
-use KenoKokoro\Response\Http\Json\JsonResponseInterface;
-use KenoKokoro\Response\Http\HttpFactoryInterface;
+use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\HttpFactoryInterface;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Container\Container;
 use Mockery as m;
 use Mockery\MockInterface;
-use KenoKokoro\Response\Http\Json\Factory as JsonFactory;
-use KenoKokoro\Response\Http\HttpFactory;
+use V9\Response\Http\Json\Factory as JsonFactory;
+use V9\Response\Http\HttpFactory;
 use V9\API\V1\Tests\Unit\UnitTestCase;
 
 class HttpFactoryTest extends UnitTestCase

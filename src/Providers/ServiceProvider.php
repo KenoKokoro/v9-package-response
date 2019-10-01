@@ -1,12 +1,12 @@
 <?php
 
-namespace KenoKokoro\Response\Providers;
+namespace V9\Response\Providers;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
-use KenoKokoro\Response\Http\Json\Factory;
-use KenoKokoro\Response\Http\Json\JsonResponseInterface;
-use KenoKokoro\Response\Http\HttpFactory;
-use KenoKokoro\Response\Http\HttpFactoryInterface;
+use V9\Response\Http\Json\Factory;
+use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\HttpFactory;
+use V9\Response\Http\HttpFactoryInterface;
 
 class ServiceProvider extends IlluminateServiceProvider
 {

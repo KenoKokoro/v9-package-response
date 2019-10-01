@@ -8,7 +8,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="V1 Unit Tests">
+        <testsuite name="Unit Tests">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
