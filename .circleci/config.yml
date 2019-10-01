@@ -24,4 +24,7 @@ jobs:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
 
-      - run: vendor/bin/phpunit
+      - run: vendor/bin/phpunit -c phpunit.xml --coverage-html=build/coverage-html
+
+      - store_artifacts:
+          path: build/coverage-html
