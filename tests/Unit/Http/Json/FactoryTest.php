@@ -2,8 +2,8 @@
 
 namespace KenoKokoro\Tests\Response\Unit\Http\Json;
 
-use KenoKokoro\Response\Http\Json\JsonResponseInterface;
-use KenoKokoro\Response\Http\Json\Factory as JsonFactory;
+use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\Json\Factory as JsonFactory;
 use Illuminate\Http\JsonResponse;
 use V9\API\V1\Tests\Unit\UnitTestCase;
 

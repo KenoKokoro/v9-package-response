@@ -3,11 +3,11 @@
 namespace KenoKokoro\Tests\Response\Unit\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
-use KenoKokoro\Response\Http\HttpFactory;
-use KenoKokoro\Response\Http\Json\Factory as JsonFactory;
-use KenoKokoro\Response\Http\Json\JsonResponseInterface;
-use KenoKokoro\Response\Http\HttpFactoryInterface;
-use KenoKokoro\Response\Providers\ServiceProvider;
+use V9\Response\Http\HttpFactory;
+use V9\Response\Http\Json\Factory as JsonFactory;
+use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\HttpFactoryInterface;
+use V9\Response\Providers\ServiceProvider;
 use Mockery as m;
 use Mockery\MockInterface;
 use V9\API\V1\Tests\Unit\UnitTestCase;

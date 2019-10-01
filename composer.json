@@ -1,5 +1,5 @@
 {
-    "name": "kenokokoro/laravel-response",
+    "name": "kenokokoro/v9-response",
     "description": "Json response builder for Laravel/Lumen",
     "keywords": [
         "framework",
@@ -21,9 +21,9 @@
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
-        "KenoKokoro\\Response\\": "src/"
+        "V9\\Response\\": "src/"
     },
     "autoload-dev": {
-        "KenoKokoro\\Tests\\Response\\": "tests/"
+        "V9\\Tests\\Response\\": "tests/"
     }
 }

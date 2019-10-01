@@ -1,6 +1,6 @@
 <?php
 
-namespace KenoKokoro\Response\Http\Json;
+namespace V9\Response\Http\Json;
 
 use Illuminate\Http\JsonResponse;
 
