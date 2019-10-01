@@ -1,7 +1,7 @@
 version: "2.1"
 
-#orbs:
-#  codecov: codecov/codecov@1.0.2
+orbs:
+  codecov: codecov/codecov@1.0.2
 
 jobs:
   build:
@@ -33,5 +33,5 @@ jobs:
       - store_artifacts:
           path: build/coverage-html
 
-#      - codecov/upload:
-#          file: build/coverage-html
+      - codecov/upload:
+          file: build/coverage-html
