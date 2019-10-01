@@ -1,4 +1,5 @@
-version: 2
+version: "2.1"
+
 jobs:
   build:
     docker:
@@ -24,4 +25,9 @@ jobs:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
 
-      - run: vendor/bin/phpunit
+      - run: vendor/bin/phpunit -c phpunit.xml --log-junit phpunit/junit.xml
+
+      - store_artifacts:
+          path: phpunit
+      - store_test_results:
+          path: phpunit
