@@ -1,20 +1,21 @@
 {
-    "name": "kenokokoro/v9-response",
+    "name": "kenokokoro/v9-package-response",
     "description": "Json response builder for Laravel/Lumen",
     "keywords": [
-        "framework",
+        "package",
         "laravel",
         "lumen",
         "json",
-        "response"
+        "response",
+        "response factory"
     ],
     "license": "MIT",
     "type": "library",
     "require": {
         "php": ">=7.4.0",
         "ext-json": "^7.4@RC",
-        "illuminate/support": "5.*",
-        "illuminate/http": "5.*"
+        "illuminate/support": "^6.1",
+        "illuminate/http": "^6.1"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
