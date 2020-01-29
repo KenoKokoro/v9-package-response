@@ -4,6 +4,7 @@ namespace V9\Response\Http;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\Redirect\RedirectResponseInterface;
 
 interface HttpFactoryInterface
 {
@@ -12,4 +13,10 @@ interface HttpFactoryInterface
      * @throws BindingResolutionException
      */
     public function json(): JsonResponseInterface;
+
+    /**
+     * @return RedirectResponseInterface
+     * @throws BindingResolutionException
+     */
+    public function redirect(): RedirectResponseInterface;
 }

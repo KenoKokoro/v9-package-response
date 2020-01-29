@@ -9,6 +9,8 @@ use V9\Response\Http\HttpFactory;
 use V9\Response\Http\HttpFactoryInterface;
 use V9\Response\Http\Json\Factory as JsonFactory;
 use V9\Response\Http\Json\JsonResponseInterface;
+use V9\Response\Http\Redirect\Factory as RedirectFactory;
+use V9\Response\Http\Redirect\RedirectResponseInterface;
 use V9\Response\Providers\ServiceProvider;
 use V9\Tests\Response\Unit\TestCase;
 
@@ -39,6 +41,10 @@ class ServiceProviderTest extends TestCase
             ->shouldReceive('bind')
             ->once()
             ->with(JsonResponseInterface::class, JsonFactory::class);
+        $this->application
+            ->shouldReceive('bind')
+            ->once()
+            ->with(RedirectResponseInterface::class, RedirectFactory::class);
 
         $this->fixture->register();
         self::assertTrue(true);
